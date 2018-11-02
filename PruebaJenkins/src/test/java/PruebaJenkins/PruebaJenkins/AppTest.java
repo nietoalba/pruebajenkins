@@ -38,7 +38,7 @@ public class AppTest
 		  
 		  //	System.setProperty("webdriver.chrome.driver", "C:/_ej_ico_0/Selenium 22_10_2018/chromedriver.exe");
 		  	
-		  System.setProperty("webdriver.chrome.driver","/home/webapp/tools/chromedriver");
+		 // System.setProperty("webdriver.chrome.driver","/home/webapp/tools/chromedriver");
 		    driver = new ChromeDriver();
 		    baseUrl = "https://www.ico.es/";
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
