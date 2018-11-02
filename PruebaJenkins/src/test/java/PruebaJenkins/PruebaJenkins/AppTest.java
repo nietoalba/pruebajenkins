@@ -36,7 +36,7 @@ public class AppTest
 	
 	  public void setUp() throws Exception {
 		  
-		 	System.setProperty("webdriver.chrome.driver", "plugins/chromedriver/chromedriver");
+		 	System.setProperty("webdriver.chrome.driver", "%JENKINS_HOME%/plugins/chromedriver/chromedriver");
 		  	
 		 //System.setProperty("webdriver.chrome.driver","/tools/chromedriver/chromedriver");
 		    driver = new ChromeDriver();
