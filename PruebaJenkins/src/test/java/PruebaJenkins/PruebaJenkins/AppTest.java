@@ -3,7 +3,6 @@ package PruebaJenkins.PruebaJenkins;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
