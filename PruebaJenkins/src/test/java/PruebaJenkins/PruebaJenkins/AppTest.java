@@ -26,7 +26,7 @@ public class AppTest
      * 
      * 
      */
-	/*
+	
 	private WebDriver driver;
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
@@ -36,7 +36,7 @@ public class AppTest
 	
 	  public void setUp() throws Exception {
 		  
-		 	System.setProperty("webdriver.chrome.driver", "C:/_ej_ico_0/Selenium 22_10_2018/chromedriver.exe");
+		 	System.setProperty("webdriver.chrome.driver", "plugins/chromedriver/chromedriver");
 		  	
 		 //System.setProperty("webdriver.chrome.driver","/tools/chromedriver/chromedriver");
 		    driver = new ChromeDriver();
@@ -53,7 +53,7 @@ public class AppTest
     /**
      * @return the suite of tests being tested
      */
-	/*
+	
     public static Test suite()
     {
         return new TestSuite( AppTest.class );
@@ -80,7 +80,7 @@ public class AppTest
 	 
 	  }
 	  
-	*/
+	
 }
 	  
 
