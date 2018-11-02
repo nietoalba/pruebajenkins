@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,7 +34,7 @@ public class AppTest
 	  private StringBuffer verificationErrors = new StringBuffer();
 	  private int valor=0;
 	  private String retorno="inicio retorno",retorno1="inicio retorno1";
-	  @Before
+	
 	  public void setUp() throws Exception {
 		  
 		  	System.setProperty("webdriver.chrome.driver", "C:/_ej_ico_0/Selenium 22_10_2018/chromedriver.exe");
