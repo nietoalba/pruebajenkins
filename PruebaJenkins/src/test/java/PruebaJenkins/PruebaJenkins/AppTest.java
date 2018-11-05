@@ -41,7 +41,7 @@ public class AppTest
 		 System.setProperty("webdriver.chrome.driver","chromedriver");
 		    driver = new ChromeDriver();
 		    baseUrl = "https://www.ico.es/";
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	   
 	  }
 	  
