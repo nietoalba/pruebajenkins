@@ -80,7 +80,26 @@ public class AppTest
 	 
 	  }
 	  
-	
+	  public void test2() throws Exception {
+		    		 
+		  assertTrue(true);
+	 
+	  }
+	  public void test3() throws Exception {
+ 		 
+		  assertTrue(true);
+	 
+	  }
+	  public void test4() throws Exception {
+ 		 
+		  assertTrue(true);
+	 
+	  }
+	  public void test5() throws Exception {
+ 		 
+		  assertTrue(true);
+	 
+	  }
 }
 	  
 
