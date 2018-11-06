@@ -44,6 +44,8 @@ public class AppTest
 		 ChromeOptions options = new ChromeOptions();
 	        options.addArguments("headless");
 	      //  options.addArguments("window-size=1200x600");
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
 	        
 		    driver = new ChromeDriver(options);
 		    baseUrl = "https://www.ico.es/";
@@ -87,6 +89,7 @@ public class AppTest
 		  retorno=driver.findElement(By.id("cwos")).getText();
 		  valor=Integer.parseInt(retorno);
 		  assertTrue(valor==15);
+		  //driver.quit();
 	 
 	  }
 	 
