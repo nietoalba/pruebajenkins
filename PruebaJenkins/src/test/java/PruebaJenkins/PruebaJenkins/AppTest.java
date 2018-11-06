@@ -43,7 +43,7 @@ public class AppTest
 		 //headless chrome
 		 ChromeOptions options = new ChromeOptions();
 	        options.addArguments("headless");
-	        options.addArguments("window-size=1200x600");
+	      //  options.addArguments("window-size=1200x600");
 	        
 		    driver = new ChromeDriver(options);
 		    baseUrl = "https://www.ico.es/";
