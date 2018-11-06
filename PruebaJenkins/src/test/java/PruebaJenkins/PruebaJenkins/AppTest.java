@@ -39,7 +39,7 @@ public class AppTest
 			//System.setProperty("webdriver.chrome.driver", "C:\\_ej_ico_0\\Selenium 22_10_2018\\chromedriver.exe");
 		  	
 		 //System.setProperty("webdriver.chrome.driver","chromedriver");
-		// System.setProperty("webdriver.chrome.driver","$JENKINS_HOME\chromedriver");
+		 System.setProperty("webdriver.chrome.driver","\\$JENKINS_HOME/chromedriver");
 		 
 		
 		 //headless chrome
