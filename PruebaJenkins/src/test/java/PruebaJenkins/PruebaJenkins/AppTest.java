@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -36,12 +36,22 @@ public class AppTest
 	
 	  public void setUp() throws Exception {
 		  
-		 //	System.setProperty("webdriver.chrome.driver", "%JENKINS_HOME%/plugins/chromedriver/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "C:\\_ej_ico_0\\Selenium 22_10_2018\\chromedriver.exe");
 		  	
 		 System.setProperty("webdriver.chrome.driver","chromedriver");
-		    driver = new ChromeDriver();
+		
+		 //headless chrome
+		 ChromeOptions options = new ChromeOptions();
+	        options.addArguments("headless");
+	        options.addArguments("window-size=1200x600");
+	        
+		    driver = new ChromeDriver(options);
 		    baseUrl = "https://www.ico.es/";
 		    driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		    
+		    
+	        
+
 	   
 	  }
 	  
@@ -79,7 +89,8 @@ public class AppTest
 		  assertTrue(valor==15);
 	 
 	  }
-	  
+	 
+	  /*
 	  public void test2() throws Exception {
 		    		 
 		  assertTrue(true);
@@ -99,7 +110,7 @@ public class AppTest
  		 
 		  assertTrue(true);
 	 
-	  }
+	  }*/
 }
 	  
 
