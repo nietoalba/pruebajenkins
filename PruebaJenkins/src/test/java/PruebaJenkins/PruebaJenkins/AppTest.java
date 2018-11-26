@@ -13,6 +13,14 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.FileInputStream;
+ 
+
+ 
+
+
 /**
  * Unit test for simple App.
  */
@@ -33,10 +41,13 @@ public class AppTest
 	  private StringBuffer verificationErrors = new StringBuffer();
 	  private int valor=0;
 	  private String retorno="inicio retorno",retorno1="inicio retorno1";
+	  String fichero = "fichero.txt";	  
+	    
+
 	
 	  public void setUp() throws Exception {
 		  
-			//System.setProperty("webdriver.chrome.driver", "C:\\_ej_ico_0\\Selenium 22_10_2018\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\_ej_ico_0\\Selenium 22_10_2018\\chromedriver.exe");
 		  	
 		 //System.setProperty("webdriver.chrome.driver","chromedriver");
 		 //System.setProperty("webdriver.chrome.driver","chromedriver");
@@ -54,10 +65,10 @@ public class AppTest
 		    driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		    
 		    
-	        
-
-	   
+		    
 	  }
+
+	 
 	  
     public AppTest( String testName )
     {
@@ -74,7 +85,7 @@ public class AppTest
     }
 
    
-    	  
+    	/*  
 	  public void test1() throws Exception {
 	    
 		  driver.get("https://www.google.es/");
@@ -95,12 +106,29 @@ public class AppTest
 	 
 	  }
 	 
-	  /*
+	  */
 	  public void test2() throws Exception {
 		    		 
-		  assertTrue(true);
-	 
-	  }
+		    try {
+		      FileInputStream fis = new FileInputStream(fichero);
+		      InputStreamReader isr = new InputStreamReader(fis,"utf8");
+		      BufferedReader br = new BufferedReader(isr);
+		 
+		      String linea;
+		      while((linea = br.readLine()) != null)
+		        System.out.println(linea);
+		 
+		      fis.close();
+		    }
+		    catch(Exception e) {
+		      System.out.println("Excepcion leyendo fichero "+ fichero + ": " + e);
+		    }
+		    
+			  assertTrue(true);
+
+	  }	 
+	  
+	  /*
 	  public void test3() throws Exception {
  		 
 		  assertTrue(true);
